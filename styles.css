@@ -17,7 +17,7 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--background-color);
-    min-width: 1400px;
+    /* min-width: 1400px; */
     margin: 0 auto;
 }
 
@@ -137,7 +137,6 @@ nav.right a span {
     border-radius: 50%;
     opacity: 0;
     animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
-    animation-delay: 2s 3s;
 }
 
 /* KEYFRAMES ANIMATION */
@@ -392,11 +391,11 @@ nav.right a span {
 @media (max-width: 600px) {
     /* NAVBAR */
     nav{
-       padding: 0 20px; 
+       padding: min(5em， 8%); 
     }
 
     nav .right a {
-        font-size: 22px;
+        font-size: 4vw;
     }
 
      nav .right a:last-child{
@@ -405,7 +404,7 @@ nav.right a span {
         padding: 0;
     }
 
-    nav.right a span {
+    nav .right a span {
         display: none;
     }
 
@@ -416,6 +415,16 @@ nav.right a span {
 
     .me-section .text h2 {
         font-size: 30px;
+        text-align: center;
+    }
+
+    .me-section .text p {
+        text-align: center;
+        word-wrap: break-word;
+    }
+
+    .me-section .headshot img {
+        width: 20vh;
     }
 
     /* SECTION 2: SKILLS */
@@ -441,5 +450,4 @@ nav.right a span {
     .contact-section {
         padding: 0 20px;
     }
-
 }
