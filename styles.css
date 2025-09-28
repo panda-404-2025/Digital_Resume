@@ -30,7 +30,7 @@ a {
     font-size: 25px;
     text-decoration: none;
     font-weight: 600;
-    cursor: default;
+    cursor: pointer;
     opacity: 0;
     animation: slideRight 1s ease forwards;
 }
@@ -391,7 +391,7 @@ nav.right a span {
 @media (max-width: 600px) {
     /* NAVBAR */
     nav{
-       padding: min(5em， 8%); 
+       padding: 8%; 
     }
 
     nav .right a {
